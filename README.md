@@ -12,10 +12,13 @@ Reasons because a module can be here.
 
 **If you are not on 1, 2 or 3:** please create a website_* module in the [OCA](https://github.com/OCA).
 
-CI Status.
+CI Status. | [![Build Status](https://travis-ci.org/pyve/site.svg)](https://travis-ci.org/pyve/site) |
 ---
 
+Test alive last changes online.
+
 [![Build Status](http://runbot.odoo.com/logo.png)](http://runbot.pyve.com/runbot/team/pyve-25)
+
 
 
 This tests is what I need "only" tested/mixed with dependency repositories, and tested 1 by 1 modules on this repository in order to be sure they are all installables.
