@@ -43,6 +43,8 @@ please check the [README](https://github.com/pyve/site/blob/8.0/README.md) file 
 
 The main idea is create a little how-to commit by commit to know how create our own features, website features and services offers in a clean way.
 
+For more documentation about "How to do things on Odoo" please refer the [official documentation](https://www.odoo.com/documentation/8.0/) for such tool, this is only an Odoo Module.
+
 How add a new features:
 ---
 
