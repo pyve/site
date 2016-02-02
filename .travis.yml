@@ -6,13 +6,13 @@ python:
   - "2.7"
 
 env:
-  - VERSION="8.0" ODOO_REPO="odoo/odoo" UNIT_TEST="1" INCLUDE="website_pyve,theme_pyve"  # test all modules.
+  - VERSION="9.0" ODOO_REPO="odoo/odoo" UNIT_TEST="1" INCLUDE="www_pyve_com"  # test all modules.
 
 virtualenv:
   system_site_packages: true
 
 install:
-  - git clone https://github.com/vauxoo/maintainer-quality-tools.git -b master-vauxoo-cms-todelete  ${HOME}/maintainer-quality-tools
+  - git clone https://github.com/vauxoo/maintainer-quality-tools.git -b master  ${HOME}/maintainer-quality-tools
   - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
   - travis_install_nightly
 
