@@ -3,7 +3,7 @@
     'name': "PyVe Site",
 
     'summary': """
-        Pyve initializator
+        Pyve init module
     """,
 
     'author': "Python Venezuela",
@@ -13,7 +13,7 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Administration',
+    'category': 'Pyve Site Custom',
 
     'version': '0.1',
 
@@ -23,15 +23,12 @@
         'website_event',
         'website_forum_doc',
         'website_twitter',
-        'membership',
-        'auth_oauth',
-        'auth_openid',
     ],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'templates.xml',
+        'templates.xml', # custom global layout.
     ],
 
     # only loaded in demonstration mode
