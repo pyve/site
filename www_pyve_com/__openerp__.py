@@ -6,10 +6,13 @@
         Pyve init module
     """,
 
-    'author': "Python Venezuela",
+    'author': "Python Venezuela,"
+              "Vauxoo",  # Just testing the linter
 
-    # Anybody can read this code, no matter why or where
+    # Everybody can read this code,
+    # no matter why or where
     # This should be always publically available.
+    # That's Why agpl is the best option.
     'license': 'AGPL-3',
 
     'contributors': [
