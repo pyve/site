@@ -8,16 +8,28 @@
 
     'author': "Python Venezuela",
 
+    # Anybody can read this code, no matter why or where
+    # This should be always publically available.
+    'license': 'AGPL-3',
+
+    'contributors': [
+        "Nhomar Hernandez <nhomar@gmail.com>",
+    ],
+
     'website': "http://www.python.org.ve",
 
     # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
+    # Check on odoo openerp/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Pyve Site Custom',
+    'category': 'Specific Industry Applications',
 
-    'version': '0.1',
+    # Following OCA's versioning strategy.
+    'version': '9.0.0.0.1',
 
     # any module necessary for this one to work correctly
+    # try to add only the lower levels.
+    # For example: if you need account_accountant do not
+    # add account because one depends of the another.
     'depends': [
         'website_blog',
         'website_event',
@@ -28,11 +40,12 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'templates.xml', # custom global layout.
+        'views/templates.xml',  # custom global layout.
+        'data/configuration.yml',  # Configuration automatic.
     ],
 
     # only loaded in demonstration mode
     'demo': [
-        'demo.xml',
+        'demo/demo.xml',
     ],
 }
