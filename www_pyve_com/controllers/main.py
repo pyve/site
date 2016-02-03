@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from openerp import http
 
 # class WwwPyveCom(http.Controller):
 #     @http.route('/www_pyve_com/www_pyve_com/', auth='public')
@@ -10,10 +9,11 @@ from openerp import http
 #     def list(self, **kw):
 #         return http.request.render('www_pyve_com.listing', {
 #             'root': '/www_pyve_com/www_pyve_com',
-#             'objects': http.request.env['www_pyve_com.www_pyve_com'].search([]),
+#             'objects': http.request.env[
+#                   'www_pyve_com.www_pyve_com'].search([]),
 #         })
 
-#     @http.route('/www_pyve_com/www_pyve_com/objects/<model("www_pyve_com.www_pyve_com"):obj>/', auth='public')
+#     @http.route('/www_pyve_com/www_pyve_com/objects/<model("www_pyve_com.www_pyve_com"):obj>/', auth='public')  # noqa
 #     def object(self, obj, **kw):
 #         return http.request.render('www_pyve_com.object', {
 #             'object': obj

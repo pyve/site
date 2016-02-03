@@ -1,0 +1,23 @@
+-
+  Setting General Information only regarding website stuff
+-
+  !record {model: base.config.settings, id: pyve_base_config_settings}:
+    {
+     'alias_domain': 'mail.pyve.com',
+    }
+-
+  !python {model: base.config.settings}: |
+    self.execute(cr, uid, [ref('pyve_base_config_settings')], context=context)
+-
+  Setting Website Information
+-
+  !record {model: website.config.settings, id: pyve_website_config_settings}:
+    {'website_name': 'www.pyve.com',
+     'social_twitter': 'https://twitter.com/pyve',
+     'social_facebook': 'https://facebook.com/pyve',
+     'social_github': 'https://github.com/pyve',
+     'social_linkedin': 'https://www.linkedin.com/company/pyve',
+     'social_googleplus': '' }
+-
+  !python {model: website.config.settings}: |
+    self.execute(cr, uid, [ref('pyve_website_config_settings')], context=context)
